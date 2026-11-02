@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bean-and-bake.netlify.app/sitemap.xml

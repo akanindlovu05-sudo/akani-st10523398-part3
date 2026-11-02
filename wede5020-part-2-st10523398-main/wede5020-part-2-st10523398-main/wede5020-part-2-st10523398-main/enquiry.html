@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request a custom cake or send a general enquiry to Bean & Bake Café.">
+    <meta name="author" content="Akani Mundlovu">
+    <title>Enquiry Form | Bean &amp; Bake Café</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Bean &amp; Bake Café logo" class="logo-mark" width="40" height="40">
+                    Bean &amp; Bake <span>Café</span>
+                </a>
+            </div>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open the navigation menu">
+            <label for="nav-toggle" class="nav-button" title="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Heading -->
+        <section class="page-head">
+            <div class="container">
+                <h1>Custom Order &amp; General Enquiry</h1>
+                <p>Please fill out the form below to request custom cakes or ask general questions.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container form-layout">
+                <div class="form-panel">
+                    <h2>Get In Touch</h2>
+                    <form id="enquiryForm">
+
+                        <div class="field">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="082 000 0000" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="enquiryType">Enquiry Type *</label>
+                            <select id="enquiryType" name="enquiryType" required>
+                                <option value="">-- Select Type --</option>
+                                <option value="custom-cake">Custom Cake Request</option>
+                                <option value="bulk-order">Bulk Bakery Order</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label for="message">Message / Order Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your order or question..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Submit Enquiry</button>
+
+                        <p id="formStatus" class="form-status"></p>
+                    </form>
+                </div>
+
+                <!-- How it works -->
+                <aside class="side-panel">
+                    <h2>How Custom Orders Work</h2>
+                    <ol class="steps">
+                        <li>
+                            <span class="step-num">1</span>
+                            <div>
+                                <h3>Tell Us Your Vision</h3>
+                                <p>Share the occasion, flavours and design ideas in the form.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">2</span>
+                            <div>
+                                <h3>We Confirm &amp; Quote</h3>
+                                <p>Our bakers get back to you with a price and timeline.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-num">3</span>
+                            <div>
+                                <h3>Collect Or Arrange Delivery</h3>
+                                <p>Pick up in-store or arrange delivery for your event.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Bean &amp; Bake Café</h3>
+                <p>Serving local families, students, and events daily with fresh bread, custom cakes and handcrafted coffee.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Get In Touch</h3>
+                <p><a href="tel:+27115550199">+27 11 555 0199</a></p>
+                <p><a href="mailto:info@beanandbake.co.za">info@beanandbake.co.za</a></p>
+                <p>123 Bakery Street, Main Mall, Johannesburg</p>
+            </div>
+        </div>
+        <div class="footer-content">
+            <p>&copy; 2026 Bean &amp; Bake Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
